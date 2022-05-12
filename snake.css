@@ -9,7 +9,6 @@
     min-height: 100vh;
     background-size: 100vw 100vh;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -19,9 +18,11 @@
     font-weight: 900;
     top: 50px;
     left: 1vw;
+    z-index: 1;
     font-family: 'New Tegomin', serif;
 }
 #hiscorebox{
+    z-index: 1;
     font-size: 3vw;
     position: absolute;
     font-weight: 900;
@@ -57,14 +58,8 @@
 }
 
 .btns{
-    /* display: none; */
     visibility: hidden;
-    /* display: grid; */
-    /* display: flex; */
-    /* grid-template-areas: "up up up",
-    "left down right"; */
-    position: absolute;
-    /* border: 2px solid black; */
+    position: fixed;
 }
 #up{
     grid-area: up;
@@ -83,21 +78,21 @@ button:hover{
 }
 @media screen and (max-width: 600px) {
     #score{
-        font-size: 8vw;
-        top: 5vh;
-        left: 30vw;
+        font-size: 1.7rem;
+        top: 1vh;
+        left: 50vw;
+        transform: translateX(-50%);
     }
     #hiscorebox{
-        font-size: 7vw;
-        top: 15vh;
-        right: 30vw;
+        font-size: 1.7rem;
+        top: 8vh;
+        right: 50vw;
+        transform: translateX(50%);
     }
     .btns{
         visibility: visible;
         bottom: 3vh;
         position: absolute;
-        /* bottom: 0; */
-        /* right: 45vw; */
     }
     button{
         width: 25vw;
@@ -110,12 +105,12 @@ button:hover{
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
     #score{
-        font-size: 7vw;
+        font-size: 2rem;
         top: 5vh;
         left: 6vw;
     }
     #hiscorebox{
-        font-size: 7vw;
+        font-size: 2rem;
         top: 5vh;
         right: 6vw;
     }
