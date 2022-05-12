@@ -94,11 +94,15 @@ button:hover{
     }
     .btns{
         visibility: visible;
-        bottom: 8vh;
+        bottom: 3vh;
+        position: absolute;
+        /* bottom: 0; */
+        /* right: 45vw; */
     }
     button{
-        width: 10vh;
-        font-size: 2vh;
+        width: 25vw;
+        height: 8vh;
+        font-size: 1rem;
         padding: 1vh;
         margin: 5px;
         font-weight: 600;
@@ -118,13 +122,14 @@ button:hover{
     .btns{
         visibility: visible;
         bottom: 2vh;
-        right: 0vw;
+        right: 1rem;
     }
     button{
-        width: 50px;
-        font-size: 10px;
+        width: 5rem;
+        font-size: 1rem;
         padding: 5px;
         margin: 5px;
+        margin-left: 10px;
         font-weight: 600;
     }
 }
