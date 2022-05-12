@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background: url("bg.jpg") no-repeat;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+#score{
+    font-size: 3vw;
+    position: absolute;
+    font-weight: 900;
+    top: 50px;
+    left: 1vw;
+    font-family: 'New Tegomin', serif;
+}
+#hiscorebox{
+    font-size: 3vw;
+    position: absolute;
+    font-weight: 900;
+    top: 50px;
+    right: 1vw;
+    font-family: 'New Tegomin', serif;
+}
+#board{
+    background: radial-gradient(rgb(189, 240, 178), rgb(117, 212, 117) );
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head{
+    background-color: rgb(87, 14, 136);
+    border: .25vmin solid white;
+    border-radius: 30%;
+}
+.snake{
+    background-color: rgb(142, 101, 209);
+    border: .25vmin solid white;
+    border-radius: 40%;
+}
+
+.food{
+    background-color: red;
+    border: .25vmin solid white;
+    border-radius: 50%;
+}
+
+.btns{
+    /* display: none; */
+    visibility: hidden;
+    /* display: grid; */
+    /* display: flex; */
+    /* grid-template-areas: "up up up",
+    "left down right"; */
+    position: absolute;
+    /* border: 2px solid black; */
+}
+#up{
+    grid-area: up;
+    display: block;
+    margin: auto;
+}
+button{
+    width: 12vw;
+    font-size: 5vw;
+    margin: 5px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(124, 124, 124);
+}
+@media screen and (max-width: 600px) {
+    #score{
+        font-size: 8vw;
+        top: 5vh;
+        left: 30vw;
+    }
+    #hiscorebox{
+        font-size: 7vw;
+        top: 15vh;
+        right: 30vw;
+    }
+    .btns{
+        visibility: visible;
+        bottom: 8vh;
+    }
+    button{
+        width: 10vh;
+        font-size: 2vh;
+        padding: 1vh;
+        margin: 5px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #score{
+        font-size: 7vw;
+        top: 5vh;
+        left: 6vw;
+    }
+    #hiscorebox{
+        font-size: 7vw;
+        top: 5vh;
+        right: 6vw;
+    }
+    .btns{
+        visibility: visible;
+        bottom: 2vh;
+        right: 0vw;
+    }
+    button{
+        width: 50px;
+        font-size: 10px;
+        padding: 5px;
+        margin: 5px;
+        font-weight: 600;
+    }
+}
