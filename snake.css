@@ -76,6 +76,11 @@ button{
 button:hover{
     background-color: rgb(124, 124, 124);
 }
+@media screen and (max-width: 400px){
+    #board{
+        transform: translateY(-20%);
+    }
+}
 @media screen and (max-width: 600px) {
     #score{
         font-size: 1.7rem;
