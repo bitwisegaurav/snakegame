@@ -78,7 +78,7 @@ button:hover{
 }
 @media screen and (max-width: 400px){
     #board{
-        transform: translateY(-20%);
+        transform: translateY(-10%);
     }
 }
 @media screen and (max-width: 600px) {
